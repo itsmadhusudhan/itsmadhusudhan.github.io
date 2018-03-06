@@ -182,7 +182,19 @@ header {
     transition: 0.4s ease-in-out; } }
 /*About section*/
 .ms-about, .ms-skills, .ms-projects, .ms-contact {
-  padding-top: 60px; }
+  padding-top: 60px;
+  position: relative; }
+
+.ms-about__description {
+  padding-left: 20px; }
+
+.ms-about__description:before {
+  content: "";
+  width: 3px;
+  height: 50%;
+  background: #e84118;
+  position: absolute;
+  left: 0px; }
 
 .ms-heading {
   text-align: center;
@@ -213,5 +225,35 @@ header {
     width: 27.5%; }
   100% {
     width: 55%; } }
+.ms-projects {
+  display: flex;
+  flex-direction: column; }
+
+.ms-project__container {
+  display: flex; }
+
+.ms-project {
+  margin-top: 60px;
+  margin-right: 30px;
+  border: 1px solid #000; }
+  .ms-project:last-child {
+    margin-right: 0; }
+
+.ms-project__image {
+  width: 100%; }
+
+@media screen and (max-width: 600px) {
+  .ms-project__container {
+    flex-direction: column; }
+
+  .ms-project {
+    margin: 30px 0; } }
+.ms-contact {
+  text-align: center; }
+
+.ms-icon {
+  color: #000;
+  font-size: 24px;
+  margin-right: 30px; }
 
 /*# sourceMappingURL=style.css.map */
