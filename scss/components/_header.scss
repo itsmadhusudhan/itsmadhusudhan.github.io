@@ -1,0 +1,153 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #40739e;
+  // background: -webkit-gradient(
+  //   linear,
+  //   left top,
+  //   right bottom,
+  //   from(#e84118),
+  //   to(#c23616)
+  // );
+  @include gradient($primary,$secondary);
+  background :$blue;  
+  overflow: hidden;
+  padding: 6px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  .ms-brand a {
+    color: #fff;
+    font-family: "Merienda", cursive;
+  }
+}
+
+.ms-menu__btn {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 20px;
+  background: #fff;
+  // border-radius: 50%;
+  // box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  & span {
+    width: 20px;
+    height: 3px;
+    background: #000;
+    position: relative;
+  }
+  & span::before,
+  & span::after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 3px;
+    background: #000;
+  }
+  & span::before {
+    top: -6px;
+  }
+  & span::after {
+    top: 6px;
+  }
+}
+
+.ms-menu__btn:hover {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.ms-navigation {
+  position: fixed;
+  background: #40739e;
+  // background: -webkit-gradient(
+  //   linear,
+  //   left top,
+  //   right bottom,
+  //   from(#e84118),
+  //   to(#c23616)
+  // );
+  @include gradient($primary,$secondary);
+  background :$blue;
+  top: 0px;
+  left: 0;
+  height: 100%;
+  width: 200px;
+  display: flex;
+  padding-top: 120px;
+  padding-left: 20px;
+  z-index: 90;
+  transition: 0.4s ease-out;
+  & .ms-menu {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.ms-menu__item {
+  margin-bottom: 20px;
+}
+
+.ms-fa {
+  color: #fff;
+  font-size: 18px;
+  margin: 0;
+}
+
+.ms-menu__link {
+  font-size: 20px;
+  color: #fff;
+  &:hover {
+    color: #fbc531;
+  }
+  &:active {
+    color: #fbc531;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .ms-menu__btn {
+    display: flex;
+  }
+  .ms-navigation {
+    transform: translate(-100%);
+  }
+}
+
+.ms-open__menu {
+  transform: translate(0%);
+}
+
+.ms-open__menu--btn {
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+
+  & span {
+    background-color: transparent;
+    transition: 0.5s ease;
+    &::before {
+      top: 0;
+      transform: rotate(45deg);
+    }
+    &:after {
+      top: 0;
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+
+.ms-active{
+  color: #fbc531;
+}
