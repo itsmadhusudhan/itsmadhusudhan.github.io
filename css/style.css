@@ -179,7 +179,8 @@ header {
 @media screen and (max-width: 1000px) {
   .ms-container {
     margin: 0;
-    transition: 0.4s ease-in-out; } }
+    transition: 0.4s ease-in-out;
+    padding: 10px; } }
 /*About section*/
 .ms-about, .ms-skills, .ms-projects, .ms-contact {
   padding-top: 60px;
