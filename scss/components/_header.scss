@@ -11,7 +11,7 @@ header {
   //   to(#c23616)
   // );
   @include gradient($primary,$secondary);
-  background :$blue;  
+  background :$green;  
   overflow: hidden;
   padding: 6px 0;
   position: fixed;
@@ -73,7 +73,7 @@ header {
   //   to(#c23616)
   // );
   @include gradient($primary,$secondary);
-  background :$blue;
+  background :$green;
   top: 0px;
   left: 0;
   height: 100%;

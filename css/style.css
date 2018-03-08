@@ -39,7 +39,7 @@ header {
   background: -o-linear-gradient(#e84118, #c23616);
   background: linear-gradient(#e84118, #c23616);
   zoom: 1;
-  background: #06284f;
+  background: #144736;
   overflow: hidden;
   padding: 6px 0;
   position: fixed;
@@ -91,7 +91,7 @@ header {
   background: -o-linear-gradient(#e84118, #c23616);
   background: linear-gradient(#e84118, #c23616);
   zoom: 1;
-  background: #06284f;
+  background: #144736;
   top: 0px;
   left: 0;
   height: 100%;
@@ -201,9 +201,10 @@ header {
   text-align: center;
   font-size: 26px;
   background: #CE3A17;
-  background: #1f4e82;
+  background: #144736;
   color: #fff;
-  padding: 0 -180px; }
+  padding: 0 -180px;
+  margin-top: 20px; }
 
 .ms-topline {
   width: 55%;
