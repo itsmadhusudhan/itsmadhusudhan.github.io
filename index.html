@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="ms-header">
         <div class="ms-menu__btn">
             <span></span>
         </div>
@@ -27,7 +27,7 @@
                 <a href="#home" class="ms-menu__link ms-active">Home</a>
             </li>
             <li class="ms-menu__item">
-                <i class="fa fa-laptop ms-fa"></i>
+                <i class="fa fa-rocket ms-fa"></i>
                 <a href="#skills" class="ms-menu__link">Skills</a>
             </li>
             <li class="ms-menu__item ms-active">
@@ -43,7 +43,12 @@
                 <i class="fa fa-id-card ms-fa"></i>
                 <a href="#contact" class="ms-menu__link">Contact</a>
             </li>
-        </ul>
+
+            <li class="ms-menu__item">
+                <i class="fa fa-file ms-fa"></i>
+                <a href="#resume" class="ms-menu__link">Resume</a>
+            </li>
+        </ul>   
     </nav>
 
     <div class="ms-container">
@@ -53,9 +58,9 @@
         </div>
 
         <div class="ms-skills" id="skills">
-            <h2 class="ms-skills__heading ms-heading">Skills</h2>
+            <h2 class="ms-skills__heading ms-heading"><i class="fa fa-rocket ms-fa"></i> Skills</h2>
             <div class="ms-skill">
-                <ul>
+                <!-- <ul>
                     <li>HTML5</li>
                     <li>CSS3</li>
                     <li>Javascript</li>
@@ -64,7 +69,7 @@
                     <li>Jsx</li>
                     <li>React js</li>
                     <li>Java</li>
-                </ul>
+                </ul> -->
                 <div class="ms-skill">
                     <h2>Building Responsive and minimalist Site</h2>
                     <p>I care more about building a site that looks and interacts in the same way on all screen sizes.</p>
@@ -74,14 +79,15 @@
                     <p>I have chosen myself to be a front-end developer and I love doing it.</p>
                 </div>
                 <div class="ms-skill">
-                    <h2></h2>
+                    <h2>Human Readable Code</h2>
+                    <p>I write code with comments and self explaining class and variable names for humans to read.</p>
                 </div>
             </div>
         </div>
 
 
         <div class="ms-about" id="about">
-            <h2 class="ms-about__heading ms-heading">About</h2>
+            <h2 class="ms-about__heading ms-heading"><i class="fa fa-list-ol ms-fa"></i> About</h2>
             <div class="ms-about__description">
                 <p>I have a burning desire to learn new things by doing them. I'm driven by curiosity to know why and how something
                     work. I choose myself to be a front-end developer. I always focus on finding the solution to a problem
@@ -91,7 +97,7 @@
         </div>
 
         <div class="ms-projects" id="projects">
-            <h2 class="ms-projects__heading ms-heading">Projects</h2>
+            <h2 class="ms-projects__heading ms-heading"><i class="fa fa-laptop ms-fa"></i> Projects</h2>
             <p>I love building things as soon as I learn something new. I try out components in bits and pieces on
                 <a href="http://codepen.io/itsmadhusudhan">codepen</a> and combine them to make full project. Here are some of the things I have built.
             </p>
@@ -126,7 +132,7 @@
         </div>
 
         <div class="ms-contact" id="contact">
-            <h2 class="ms-contact__heading ms-heading">Contact</h2>
+            <h2 class="ms-contact__heading ms-heading"><i class="fa fa-id-card ms-fa"></i> Contact</h2>
 
             <p>Have something to talk to me?</p>
             <a href="http://github.com/itsmadhusudhan" class="ms-contact__link" target="_blank">
@@ -146,6 +152,12 @@
             </a>
 
         </div>
+
+        <div class="ms-resume" id="resume">
+            <h2 class="ms-resume__heading ms-heading"><i class="fa fa-file ms-fa"></i> Resume</h2>
+            <a href="" class="ms-btn ms-btn__courage">Download Resume</a>
+        </div>
+
     </div>
     <script src="script/script.js"></script>
 </body>

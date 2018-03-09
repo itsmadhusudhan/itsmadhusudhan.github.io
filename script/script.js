@@ -20,7 +20,7 @@ function handleLink(e) {
       handleClick(e);
     }
   });
-  console.log(e.currentTarget);
+  // console.log(e.currentTarget);
 }
 
 //add event listener on menu button
@@ -30,3 +30,17 @@ menuBtn.addEventListener("click", handleClick);
 menuLink.forEach(link => {
   link.addEventListener("click", handleLink);
 });
+
+function scrollAction(){
+  const skills=document.querySelector(".ms-home");
+  const topOffset=skills.offsetTop;
+  if(window.scrollY>topOffset){
+    // console.log(topOffset);
+    menuLink.forEach(link => {
+      // link.classList.toggle("ms-active");
+      
+      
+    });
+  }
+}
+window.addEventListener('scroll',scrollAction);

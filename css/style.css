@@ -251,11 +251,27 @@ header {
   .ms-project {
     margin: 30px 0; } }
 .ms-contact {
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 50px; }
 
 .ms-icon {
   color: #000;
   font-size: 24px;
   margin-right: 30px; }
+
+.ms-resume {
+  padding-bottom: 150px;
+  text-align: center; }
+
+.ms-resume__heading {
+  margin-bottom: 20px; }
+
+.ms-btn {
+  display: inline-block;
+  border: 0;
+  padding: 6px 10px;
+  background: #e84118;
+  color: #fff;
+  border-radius: 4px; }
 
 /*# sourceMappingURL=style.css.map */
