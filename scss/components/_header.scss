@@ -2,24 +2,14 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #40739e;
-  // background: -webkit-gradient(
-  //   linear,
-  //   left top,
-  //   right bottom,
-  //   from(#e84118),
-  //   to(#c23616)
-  // );
-  @include gradient($primary,$secondary);
-  background :$green;  
+  background :$green;
   overflow: hidden;
-  padding: 6px 0;
+  padding: 3px 0;
   position: fixed;
   width: 100%;
   z-index: 9999;
   .ms-brand a {
     color: #fff;
-    font-family: "Merienda", cursive;
   }
 }
 
@@ -30,16 +20,13 @@ header {
   width: 40px;
   height: 40px;
   position: absolute;
-  left: 20px;
-  background: #fff;
-  // border-radius: 50%;
-  // box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2);
+  left: 10px;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   & span {
     width: 20px;
     height: 3px;
-    background: #000;
+    background: #fff;
     position: relative;
   }
   & span::before,
@@ -48,7 +35,7 @@ header {
     content: "";
     width: 20px;
     height: 3px;
-    background: #000;
+    background: #fff;
   }
   & span::before {
     top: -6px;
@@ -64,29 +51,26 @@ header {
 
 .ms-navigation {
   position: fixed;
-  background: #40739e;
-  // background: -webkit-gradient(
-  //   linear,
-  //   left top,
-  //   right bottom,
-  //   from(#e84118),
-  //   to(#c23616)
-  // );
-  @include gradient($primary,$secondary);
   background :$green;
   top: 0px;
   left: 0;
   height: 100%;
-  width: 200px;
+  width: 180px;
   display: flex;
-  padding-top: 120px;
-  padding-left: 20px;
+  padding-top: 80px;
+  padding-left: 0px;
   z-index: 90;
   transition: 0.4s ease-out;
-  & .ms-menu {
-    display: flex;
-    flex-direction: column;
-  }
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.ms-menu {
+  display: flex;
+  flex-direction: column;
 }
 
 .ms-menu__item {
@@ -100,7 +84,7 @@ header {
 }
 
 .ms-menu__link {
-  font-size: 20px;
+  font-size: 18px;
   color: #fff;
   &:hover {
     color: #fbc531;
@@ -144,6 +128,13 @@ header {
       top: 0;
       transform: rotate(-45deg);
     }
+  }
+}
+
+
+@media screen and (max-width:450px){
+  .ms-navigation{
+    width: 100%;
   }
 }
 

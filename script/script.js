@@ -5,7 +5,7 @@ const menuIcon=document.querySelectorAll(".ms-fa");
 
 //function to handle menu opening anf closing
 function handleClick(e) {
-  menuBtn.classList.toggle("ms-open__menu--btn");
+  // menuBtn.classList.toggle("ms-open__menu--btn");
   menu.classList.toggle("ms-open__menu");
 }
 

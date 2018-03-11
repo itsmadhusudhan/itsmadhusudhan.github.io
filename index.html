@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Madhusudhan | Front-End Developer</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link href="https://fonts.googleapis.com/css?family=Itim|Merienda" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -27,7 +27,7 @@
                 <a href="#home" class="ms-menu__link ms-active">Home</a>
             </li>
             <li class="ms-menu__item">
-                <i class="fa fa-rocket ms-fa"></i>
+                <i class="fa fa-code ms-fa"></i>
                 <a href="#skills" class="ms-menu__link">Skills</a>
             </li>
             <li class="ms-menu__item ms-active">
@@ -48,28 +48,19 @@
                 <i class="fa fa-file ms-fa"></i>
                 <a href="#resume" class="ms-menu__link">Resume</a>
             </li>
-        </ul>   
+        </ul>
     </nav>
 
     <div class="ms-container">
         <div class="ms-home" id="home">
-            <img class="ms-home__image" src="/images/madhu.jpg" alt="">
+            <img class="ms-home__image" src="/images/madhu.jpg" alt=""/>
             <h2 class="ms-home__description">I love building UI and UX that can drive users decisions</h2>
         </div>
 
         <div class="ms-skills" id="skills">
-            <h2 class="ms-skills__heading ms-heading"><i class="fa fa-rocket ms-fa"></i> Skills</h2>
-            <div class="ms-skill">
-                <!-- <ul>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>Javascript</li>
-                    <li>Typescript</li>
-                    <li>Sass</li>
-                    <li>Jsx</li>
-                    <li>React js</li>
-                    <li>Java</li>
-                </ul> -->
+            <h2 class="ms-skills__heading ms-heading">
+                <i class="fa fa-rocket ms-fa"></i> Skills</h2>
+            <div class="ms-skill__container">
                 <div class="ms-skill">
                     <h2>Building Responsive and minimalist Site</h2>
                     <p>I care more about building a site that looks and interacts in the same way on all screen sizes.</p>
@@ -87,7 +78,8 @@
 
 
         <div class="ms-about" id="about">
-            <h2 class="ms-about__heading ms-heading"><i class="fa fa-list-ol ms-fa"></i> About</h2>
+            <h2 class="ms-about__heading ms-heading">
+                <i class="fa fa-list-ol ms-fa"></i> About</h2>
             <div class="ms-about__description">
                 <p>I have a burning desire to learn new things by doing them. I'm driven by curiosity to know why and how something
                     work. I choose myself to be a front-end developer. I always focus on finding the solution to a problem
@@ -97,15 +89,16 @@
         </div>
 
         <div class="ms-projects" id="projects">
-            <h2 class="ms-projects__heading ms-heading"><i class="fa fa-laptop ms-fa"></i> Projects</h2>
+            <h2 class="ms-projects__heading ms-heading">
+                <i class="fa fa-laptop ms-fa"></i> Projects</h2>
             <p>I love building things as soon as I learn something new. I try out components in bits and pieces on
                 <a href="http://codepen.io/itsmadhusudhan">codepen</a> and combine them to make full project. Here are some of the things I have built.
             </p>
             <div class="ms-project__container">
 
                 <div class="ms-project">
+                    <img src="/images/portfolio.png" alt="" class="ms-project__image">
                     <div class="ms-project__overview">
-                        <img src="/images/portfolio.png" alt="" class="ms-project__image">
                         <h3 class="ms-project__overview--title">Modern and Responsive Portfolio</h3>
                         <p class="ms-project__overview--content">
                             Mobile first responsive portfolio site built with modern coding style and minimilist design.
@@ -117,8 +110,8 @@
                 </div>
 
                 <div class="ms-project">
+                    <img src="/images/giphy.png" alt="" class="ms-project__image">
                     <div class="ms-project__overview">
-                        <img src="/images/giphy.png" alt="" class="ms-project__image">
                         <h3 class="ms-project__overview--title">A Giphy clone displaying Trending giphs</h3>
                         <p class="ms-project__overview--content">
                             Mobile first responsive portfolio site built with modern coding style and minimilist design.
@@ -128,11 +121,26 @@
                         <h3 class="ms-project__description--title"></h3>
                     </div>
                 </div>
+
+                <div class="ms-project">
+                    <img src="/images/results-frontend.png" alt="" class="ms-project__image">
+                    <div class="ms-project__overview">
+                        <h3 class="ms-project__overview--title">A Giphy clone displaying Trending giphs</h3>
+                        <p class="ms-project__overview--content">
+                            Mobile first responsive portfolio site built with modern coding style and minimilist design.
+                        </p>
+                    </div>
+                    <div class="ms-project__description">
+                        <h3 class="ms-project__description--title"></h3>
+                    </div>
+                </div>
+                
             </div>
         </div>
 
-        <div class="ms-contact" id="contact">
-            <h2 class="ms-contact__heading ms-heading"><i class="fa fa-id-card ms-fa"></i> Contact</h2>
+        <section class="ms-contact" id="contact">
+            <h2 class="ms-contact__heading ms-heading">
+                <i class="fa fa-id-card ms-fa"></i> Contact</h2>
 
             <p>Have something to talk to me?</p>
             <a href="http://github.com/itsmadhusudhan" class="ms-contact__link" target="_blank">
@@ -151,10 +159,11 @@
                 <i class="ms-icon fa fa-codepen"></i>
             </a>
 
-        </div>
+        </section>
 
         <div class="ms-resume" id="resume">
-            <h2 class="ms-resume__heading ms-heading"><i class="fa fa-file ms-fa"></i> Resume</h2>
+            <h2 class="ms-resume__heading ms-heading">
+                <i class="fa fa-file ms-fa"></i> Resume</h2>
             <a href="" class="ms-btn ms-btn__courage">Download Resume</a>
         </div>
 

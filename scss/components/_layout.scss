@@ -5,10 +5,6 @@
   overflow: hidden;
   position: relative;
   padding: 10px 80px;
-
-  & p {
-    font-size: 20px;
-  }
 }
 
 .ms-home {
@@ -35,28 +31,58 @@
   .ms-container {
     margin: 0;
     transition: 0.4s ease-in-out;
-    padding:10px;
+    padding: 10px;
   }
 }
 
 /*About section*/
-.ms-about,.ms-skills,.ms-projects,.ms-contact {
+.ms-about,
+.ms-skills,
+.ms-projects,
+.ms-contact {
   padding-top: 60px;
   position: relative;
 }
 
-.ms-about__description{
+.ms-skills__heading {
+  margin-bottom: 20px;
+}
+
+.ms-skill__container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.ms-skill {
+  padding: 20px;
+  box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.2),
+    -1px -2px 3px 0px rgba(0, 0, 0, 0.2);
+  margin-right: 45px;
+  flex-basis: 45%;
+  margin-bottom: 50px;
+  border-radius: 4px;
+  background: #fff;
+  flex-grow: 1;
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+.ms-about__description {
   padding-left: 20px;
 }
 
-.ms-about__description:before{
-  content: "";
-  width: 3px;
-  height: 50%;
-  background: $primary;
-  position: absolute;
-  left: 0px;
-}
+// .ms-about__description:before{
+//   content: "";
+//   width: 3px;
+//   height: 50%;
+//   background: $primary;
+//   position: absolute;
+//   left: 0px;
+// }
 
 // .ms-about__description:after{
 //   content: "";
@@ -68,15 +94,14 @@
 //   border-bottom: 1px solid $secondary;
 // }
 
-
 .ms-heading {
   text-align: center;
   font-size: 26px;
-  background: #CE3A17;
-  background: $strips;
+  background: #ce3a17;
+  // background: $strips;
   color: #fff;
   padding: 0 -180px;
-  margin-top:20px;
+  margin-top: 20px;
 }
 
 .ms-topline {
@@ -109,46 +134,68 @@
 
 //project section
 
-.ms-projects{
+.ms-projects {
+  // display: flex;
+  // flex-direction: column;
+  // position: relative;
+}
+
+.ms-project__container {
   display: flex;
-  flex-direction: column;
+  // position: relative;
+  flex-wrap: wrap;
+  margin: auto;
+  padding: 0 20px;
 }
 
-.ms-project__container{
-  display:flex;
-}
-
-.ms-project{
+.ms-project {
   margin-top: 60px;
-  margin-right:30px;
-  border: 1px solid #000;
-  &:last-child{
+  margin-right: 60px;
+  display: flex;
+  flex-basis: 45%;
+  flex-direction: column;
+  box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.2),
+    -1px -2px 3px 0px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  border-radius: 4px;
+  &:nth-child(2n) {
     margin-right: 0;
   }
 }
-.ms-project__image{
+.ms-project__image {
   width: 100%;
-
+  border-radius: 4px 4px 0 0;
 }
 
-@media screen and (max-width:600px){
-  .ms-project__container{
+.ms-project__overview {
+  padding: 20px;
+}
+
+.ms-project__overview--title {
+  font-size: 28px;
+}
+
+.ms-project__overview--content {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 600px) {
+  .ms-project__container {
     flex-direction: column;
   }
-  .ms-project{
-    margin: 30px 0 ;
+  .ms-project {
+    margin: 30px 0;
   }
 }
 
-
 //contact section
-.ms-contact{
+.ms-contact {
   text-align: center;
   padding-bottom: 50px;
 }
 
-.ms-icon{
+.ms-icon {
   color: #000;
-  font-size: 24px;
-  margin-right: 30px;
+  font-size: 28px;
+  margin-right: 50px;
 }

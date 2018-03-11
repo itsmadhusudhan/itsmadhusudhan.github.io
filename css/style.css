@@ -8,13 +8,14 @@ html {
   outline: none; }
 
 body {
-  font-family: Merriweather,Itim,sans-serif;
+  font-family: Merriweather,Merienda,Itim,sans-serif;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.7;
   margin: 0;
   padding: 0;
   font-size: 16px;
-  color: #333; }
+  color: #333;
+  background: #F0F7FA; }
 
 a {
   text-decoration: none; }
@@ -29,25 +30,14 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #40739e;
-  background: #d53c17;
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorStr="$start~", EndColorStr="$end~" );
-  background: -webkit-gradient(linear, left top, right bottom, from(#e84118), to(#c23616));
-  background: -webkit-linear-gradient(#e84118, #c23616);
-  background: -moz-linear-gradient(top, #e84118, #c23616);
-  background: -ms-linear-gradient(#e84118, #c23616);
-  background: -o-linear-gradient(#e84118, #c23616);
-  background: linear-gradient(#e84118, #c23616);
-  zoom: 1;
-  background: #144736;
+  background: #2B2B2B;
   overflow: hidden;
-  padding: 6px 0;
+  padding: 3px 0;
   position: fixed;
   width: 100%;
   z-index: 9999; }
   header .ms-brand a {
-    color: #fff;
-    font-family: "Merienda", cursive; }
+    color: #fff; }
 
 .ms-menu__btn {
   display: none;
@@ -56,21 +46,20 @@ header {
   width: 40px;
   height: 40px;
   position: absolute;
-  left: 20px;
-  background: #fff;
+  left: 10px;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
   .ms-menu__btn span {
     width: 20px;
     height: 3px;
-    background: #000;
+    background: #fff;
     position: relative; }
   .ms-menu__btn span::before, .ms-menu__btn span::after {
     position: absolute;
     content: "";
     width: 20px;
     height: 3px;
-    background: #000; }
+    background: #fff; }
   .ms-menu__btn span::before {
     top: -6px; }
   .ms-menu__btn span::after {
@@ -81,29 +70,25 @@ header {
 
 .ms-navigation {
   position: fixed;
-  background: #40739e;
-  background: #d53c17;
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorStr="$start~", EndColorStr="$end~" );
-  background: -webkit-gradient(linear, left top, right bottom, from(#e84118), to(#c23616));
-  background: -webkit-linear-gradient(#e84118, #c23616);
-  background: -moz-linear-gradient(top, #e84118, #c23616);
-  background: -ms-linear-gradient(#e84118, #c23616);
-  background: -o-linear-gradient(#e84118, #c23616);
-  background: linear-gradient(#e84118, #c23616);
-  zoom: 1;
-  background: #144736;
+  background: #2B2B2B;
   top: 0px;
   left: 0;
   height: 100%;
-  width: 200px;
+  width: 180px;
   display: flex;
-  padding-top: 120px;
-  padding-left: 20px;
+  padding-top: 80px;
+  padding-left: 0px;
   z-index: 90;
-  transition: 0.4s ease-out; }
-  .ms-navigation .ms-menu {
-    display: flex;
-    flex-direction: column; }
+  transition: 0.4s ease-out;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  margin: 0; }
+
+.ms-menu {
+  display: flex;
+  flex-direction: column; }
 
 .ms-menu__item {
   margin-bottom: 20px; }
@@ -114,7 +99,7 @@ header {
   margin: 0; }
 
 .ms-menu__link {
-  font-size: 20px;
+  font-size: 18px;
   color: #fff; }
   .ms-menu__link:hover {
     color: #fbc531; }
@@ -147,6 +132,9 @@ header {
     top: 0;
     transform: rotate(-45deg); }
 
+@media screen and (max-width: 450px) {
+  .ms-navigation {
+    width: 100%; } }
 .ms-active {
   color: #fbc531; }
 
@@ -156,8 +144,6 @@ header {
   overflow: hidden;
   position: relative;
   padding: 10px 80px; }
-  .ms-container p {
-    font-size: 20px; }
 
 .ms-home {
   display: flex;
@@ -182,26 +168,42 @@ header {
     transition: 0.4s ease-in-out;
     padding: 10px; } }
 /*About section*/
-.ms-about, .ms-skills, .ms-projects, .ms-contact {
+.ms-about,
+.ms-skills,
+.ms-projects,
+.ms-contact {
   padding-top: 60px;
   position: relative; }
+
+.ms-skills__heading {
+  margin-bottom: 20px; }
+
+.ms-skill__container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.ms-skill {
+  padding: 20px;
+  box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.2), -1px -2px 3px 0px rgba(0, 0, 0, 0.2);
+  margin-right: 45px;
+  flex-basis: 45%;
+  margin-bottom: 50px;
+  border-radius: 4px;
+  background: #fff;
+  flex-grow: 1; }
+  .ms-skill:nth-child(2n) {
+    margin-right: 0; }
 
 .ms-about__description {
   padding-left: 20px; }
 
-.ms-about__description:before {
-  content: "";
-  width: 3px;
-  height: 50%;
-  background: #e84118;
-  position: absolute;
-  left: 0px; }
-
 .ms-heading {
   text-align: center;
   font-size: 26px;
-  background: #CE3A17;
-  background: #144736;
+  background: #ce3a17;
   color: #fff;
   padding: 0 -180px;
   margin-top: 20px; }
@@ -227,22 +229,36 @@ header {
     width: 27.5%; }
   100% {
     width: 55%; } }
-.ms-projects {
-  display: flex;
-  flex-direction: column; }
-
 .ms-project__container {
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  padding: 0 20px; }
 
 .ms-project {
   margin-top: 60px;
-  margin-right: 30px;
-  border: 1px solid #000; }
-  .ms-project:last-child {
+  margin-right: 60px;
+  display: flex;
+  flex-basis: 45%;
+  flex-direction: column;
+  box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.2), -1px -2px 3px 0px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  border-radius: 4px; }
+  .ms-project:nth-child(2n) {
     margin-right: 0; }
 
 .ms-project__image {
-  width: 100%; }
+  width: 100%;
+  border-radius: 4px 4px 0 0; }
+
+.ms-project__overview {
+  padding: 20px; }
+
+.ms-project__overview--title {
+  font-size: 28px; }
+
+.ms-project__overview--content {
+  font-size: 16px; }
 
 @media screen and (max-width: 600px) {
   .ms-project__container {
@@ -256,8 +272,8 @@ header {
 
 .ms-icon {
   color: #000;
-  font-size: 24px;
-  margin-right: 30px; }
+  font-size: 28px;
+  margin-right: 50px; }
 
 .ms-resume {
   padding-bottom: 150px;
