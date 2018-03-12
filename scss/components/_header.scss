@@ -1,16 +1,22 @@
 header {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  // justify-content: center;
   align-items: center;
-  background :$green;
+  background: $green;
   overflow: hidden;
   padding: 3px 0;
-  position: fixed;
+  // position: fixed;
   width: 100%;
   z-index: 9999;
-  .ms-brand a {
-    color: #fff;
-  }
+}
+
+.ms-brand{
+  // margin-left: -150px;  
+}
+
+.ms-brand a {
+  color: #fff;
 }
 
 .ms-menu__btn {
@@ -45,17 +51,18 @@ header {
   }
 }
 
-.ms-menu__btn:hover {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-}
+// .ms-menu__btn:hover {
+//   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+// }
 
 .ms-navigation {
   position: fixed;
-  background :$green;
+  background: $green;
   top: 0px;
   left: 0;
+  bottom:0;
   height: 100%;
-  width: 180px;
+  width: 200px;
   display: flex;
   padding-top: 80px;
   padding-left: 0px;
@@ -63,8 +70,6 @@ header {
   transition: 0.4s ease-out;
   display: flex;
   flex-direction: column;
-  align-content: center;
-  align-items: center;
   margin: 0;
 }
 
@@ -103,6 +108,10 @@ header {
   }
 }
 
+.ms-brand{
+  margin:0;
+}
+
 .ms-open__menu {
   transform: translate(0%);
 }
@@ -131,14 +140,12 @@ header {
   }
 }
 
-
-@media screen and (max-width:450px){
-  .ms-navigation{
+@media screen and (max-width: 450px) {
+  .ms-navigation {
     width: 100%;
   }
 }
 
-
-.ms-active{
+.ms-active {
   color: #fbc531;
 }

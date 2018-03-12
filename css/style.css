@@ -14,8 +14,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 16px;
-  color: #333;
-  background: #F0F7FA; }
+  color: #333; }
 
 a {
   text-decoration: none; }
@@ -28,16 +27,16 @@ h1, h2, h3, h4, h5, h6, a, li, ul {
 
 header {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   background: #2B2B2B;
   overflow: hidden;
   padding: 3px 0;
-  position: fixed;
   width: 100%;
   z-index: 9999; }
-  header .ms-brand a {
-    color: #fff; }
+
+.ms-brand a {
+  color: #fff; }
 
 .ms-menu__btn {
   display: none;
@@ -65,16 +64,14 @@ header {
   .ms-menu__btn span::after {
     top: 6px; }
 
-.ms-menu__btn:hover {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
-
 .ms-navigation {
   position: fixed;
   background: #2B2B2B;
   top: 0px;
   left: 0;
+  bottom: 0;
   height: 100%;
-  width: 180px;
+  width: 200px;
   display: flex;
   padding-top: 80px;
   padding-left: 0px;
@@ -82,8 +79,6 @@ header {
   transition: 0.4s ease-out;
   display: flex;
   flex-direction: column;
-  align-content: center;
-  align-items: center;
   margin: 0; }
 
 .ms-menu {
@@ -112,6 +107,9 @@ header {
 
   .ms-navigation {
     transform: translate(-100%); } }
+.ms-brand {
+  margin: 0; }
+
 .ms-open__menu {
   transform: translate(0%); }
 
@@ -142,15 +140,13 @@ header {
   height: 100%;
   margin-left: 200px;
   overflow: hidden;
-  position: relative;
-  padding: 10px 80px; }
+  position: relative; }
 
 .ms-home {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 100px;
-  width: 100%; }
+  padding-top: 100px; }
 
 .ms-home__image {
   width: 200px;
@@ -165,8 +161,7 @@ header {
 @media screen and (max-width: 1000px) {
   .ms-container {
     margin: 0;
-    transition: 0.4s ease-in-out;
-    padding: 10px; } }
+    transition: 0.4s ease-in-out; } }
 /*About section*/
 .ms-about,
 .ms-skills,
@@ -186,8 +181,7 @@ header {
   padding-right: 20px; }
 
 .ms-skill {
-  padding: 20px;
-  box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.2), -1px -2px 3px 0px rgba(0, 0, 0, 0.2);
+  padding: 10px;
   margin-right: 45px;
   flex-basis: 45%;
   margin-bottom: 50px;
