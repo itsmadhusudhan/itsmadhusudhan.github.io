@@ -8,11 +8,11 @@ header {
   padding: 3px 0;
   // position: fixed;
   width: 100%;
-  z-index: 9999;
+  z-index: 99;
 }
 
-.ms-brand{
-  // margin-left: -150px;  
+.ms-brand {
+  // margin-left: -150px;
 }
 
 .ms-brand a {
@@ -27,13 +27,16 @@ header {
   height: 40px;
   position: absolute;
   left: 10px;
+  top: 10px;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  z-index: 999;
   & span {
     width: 20px;
     height: 3px;
     background: #fff;
     position: relative;
+    z-index: 999;
   }
   & span::before,
   & span::after {
@@ -60,7 +63,7 @@ header {
   background: $green;
   top: 0px;
   left: 0;
-  bottom:0;
+  bottom: 0;
   height: 100%;
   width: 200px;
   display: flex;
@@ -106,10 +109,14 @@ header {
   .ms-navigation {
     transform: translate(-100%);
   }
+  .ms-header {
+    position: fixed;
+  }
+  
 }
 
-.ms-brand{
-  margin:0;
+.ms-brand {
+  margin: 0;
 }
 
 .ms-open__menu {
