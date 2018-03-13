@@ -138,7 +138,8 @@ header {
 
 @media screen and (max-width: 450px) {
   .ms-navigation {
-    width: 100%; } }
+    width: 100%;
+    align-items: center; } }
 .ms-active {
   color: #fbc531; }
 
@@ -152,7 +153,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 20px; }
+  padding: 20px 0 10px 10px; }
 
 .ms-home__image {
   width: 200px;
@@ -193,7 +194,7 @@ header {
   padding: 10px;
   margin-right: 45px;
   flex-basis: 45%;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   border-radius: 4px;
   background: #fff;
   flex-grow: 1; }
@@ -201,7 +202,8 @@ header {
     margin-right: 0; }
 
 .ms-about__description {
-  padding-left: 20px; }
+  padding-left: 20px;
+  padding: 30px 20px 30px 20px; }
 
 .ms-heading {
   text-align: center;
@@ -254,6 +256,9 @@ header {
   width: 100%;
   border-radius: 4px 4px 0 0; }
 
+.ms-projects__heading + p {
+  padding: 0 20px 0 20px; }
+
 .ms-project__overview {
   padding: 20px; }
 
@@ -292,5 +297,13 @@ header {
   background: #e84118;
   color: #fff;
   border-radius: 4px; }
+
+.ms-btn__courage {
+  margin-top: 60px; }
+
+.ms-btn--project {
+  margin-right: 30px; }
+  .ms-btn--project:last-child {
+    margin: 0; }
 
 /*# sourceMappingURL=style.css.map */

@@ -2,16 +2,18 @@ const menuBtn = document.querySelector(".ms-menu__btn");
 const menu = document.querySelector(".ms-navigation");
 const menuLink = document.querySelectorAll(".ms-menu__link");
 const menuIcon=document.querySelectorAll(".ms-fa");
+const sections=document.querySelectorAll(".ms-scroll")
 
 //function to handle menu opening anf closing
 function handleClick(e) {
+  "use strict";
   // menuBtn.classList.toggle("ms-open__menu--btn");
   menu.classList.toggle("ms-open__menu");
 }
 
 //function to toggle the color of active link
 function handleLink(e) {
-  menuLink.forEach(link => {
+  menuLink.forEach((link) => {
     if (link.classList.contains("ms-active")) {
       link.classList.remove("ms-active");
     }
@@ -24,11 +26,9 @@ function handleLink(e) {
 }
 
 //add event listener on menu button
-menuBtn.addEventListener("click", handleClick);
+menuBtn.addEventListener('click', handleClick);
 
 //add event listener on menu links
-menuLink.forEach(link => {
+menuLink.forEach((link) => {
   link.addEventListener("click", handleLink);
 });
-
-
