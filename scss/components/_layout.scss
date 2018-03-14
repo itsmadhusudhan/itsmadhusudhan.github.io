@@ -1,10 +1,3 @@
-.ms-container {
-  height: 100%;
-  margin-left: 200px;
-  overflow: hidden;
-  position: relative;
-}
-
 .ms-home {
   display: flex;
   flex-direction: column;
@@ -19,7 +12,6 @@
 }
 
 .ms-home__description {
-  color: #000;
   font-size: 28px;
   padding-top: 10px;
 }
@@ -29,7 +21,7 @@
     margin: 0;
     transition: 0.4s ease-in-out;
   }
-  .ms-home{
+  .ms-home {
     padding-top: 100px;
   }
 }
@@ -73,7 +65,7 @@
 
 .ms-about__description {
   padding-left: 20px;
-  padding:30px 20px 30px 20px;
+  padding: 30px 20px 30px 20px;
 }
 
 // .ms-about__description:before{
@@ -103,6 +95,7 @@
   color: #fff;
   padding: 0 -180px;
   margin-top: 20px;
+  margin: 0 10px;
 }
 
 .ms-topline {
@@ -143,8 +136,7 @@
 }
 
 .ms-project {
-  margin-top: 60px;
-  margin-right: 60px;
+  margin: 50px 25px 0 25px;
   display: flex;
   flex-basis: 45%;
   flex-direction: column;
@@ -152,16 +144,27 @@
     -1px -2px 3px 0px rgba(0, 0, 0, 0.2);
   background: #fff;
   border-radius: 4px;
+  transform: scale(0.93);
+  transition: 0.6s ease;
+
   &:nth-child(2n) {
     margin-right: 0;
   }
 }
+
+.ms-project:hover {
+  box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.2),
+    -1px -2px 3px 0px rgba(0, 0, 0, 0.2);
+  transform: scale(0.97);
+  transition: 0.6s ease;
+}
+
 .ms-project__image {
   width: 100%;
   border-radius: 4px 4px 0 0;
 }
 
-.ms-projects__heading+p{
+.ms-projects__heading + p {
   padding: 0 20px 0 20px;
 }
 
@@ -177,13 +180,24 @@
   font-size: 16px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
   .ms-project__container {
     flex-direction: column;
   }
-  .ms-project {
-    margin: 30px 0;
+}
+
+@media screen and (max-width:1000px){
+  .ms-project__container{
+    padding:0 10px;
   }
+
+  .ms-project {
+    margin: 25px 15px;
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
 }
 
 //contact section

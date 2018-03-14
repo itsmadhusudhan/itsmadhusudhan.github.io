@@ -26,3 +26,10 @@
         margin:0;
     }
 }
+
+
+@media screen and (max-width:640px){
+    .ms-contact__link{
+        margin-right: -5px;
+    }
+}
